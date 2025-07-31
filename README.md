@@ -12,6 +12,7 @@ The solution includes:
 - A Python Tkinter-based GUI for live posture monitoring and alerts
 - Historical posture trend visualization and pain prediction
 
+![Overviews](images/Overview.jpg)
 ---
 
 ## Features
@@ -23,17 +24,19 @@ The solution includes:
 - No cameras or continuous user inputs required
 - Personalized monitoring adaptable to users’ movement patterns
 - Supports sitting, standing, and walking activity monitoring
-
 ---
-
 ## Hardware & Software
-
 - **Hardware**: MPU6050 (3-axis accelerometer + gyroscope) mounted on upper back, smartphone/PC for data logging
+  
+	![Hardware Setup](images/Hardware.jpg)
+
 - **Software**: 
   - Python for data processing and model training
   - TensorFlow/Keras for building and training CNN-LSTM models
   - Tkinter for GUI and live posture visualization
   - Phyphox app for sensor data collection (alternative data source)
+
+	![Software Setup](images/Phyphox.jpg)
 
 ---
 
@@ -41,8 +44,8 @@ The solution includes:
 
 1. Clone the repository:
 
-		git clone https://github.com/yourusername/posture-monitoring.git
-	cd posture-monitoring
+		git clone https://github.com/shivamds12/Posture-Monitoring-and-Spinal-Pain-Prediction
+		cd posture-monitoring
 
 2. Install Python dependencies:
 
@@ -62,7 +65,7 @@ Required packages include:
 1. Connect the MPU6050 sensor via Ardiuno Board or start data collection using Phyphox app.
 2. Launch the Python script for live monitoring:
 
-		python posture_monitor.py
+		python REAL_TIME_PREDICATION_USING_MPU3060.ipynb
 
 3. The GUI shows live sensor readings, posture angle graphs, and classification results.
 4. Alerts will be triggered when bad posture persists longer than the configured threshold.
